@@ -12,7 +12,7 @@ if submit:
     if op == '+':
         res = add(a, b)
     elif op == '-':
-        res = sub(a, b)
+        res = sub(a, b) 
     elif op == '*':
         res = mul(a, b)
     elif op == '/':
