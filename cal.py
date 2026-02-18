@@ -25,7 +25,7 @@ def div(a, b):
     else:
         return "Error: Division by zero"
 def floor_div(a, b):
-    a//b
+    return a//b
 def power(a, b):
   return a ** b
 def mod(a, b):
