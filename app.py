@@ -5,7 +5,7 @@ st.header('Calculator')
 st.write("This is the app for calculator")
 a = st.number_input('Enter first number: ')
 b = st.number_input('Enter second number: ')
-op = st.selectbox("Operator", ['+','-','*','/','%'])
+op = st.selectbox("Operator", ['+','-','*','/','%', '**'])
 
 submit = st.button('Answer')
 if submit:
@@ -19,5 +19,7 @@ if submit:
         res = div(a, b)
     elif op == '%': 
         res = mod(a, b)
+    elif op == '**': 
+        res = power(a, b)
 
     st.write(f"Result: {res}")
